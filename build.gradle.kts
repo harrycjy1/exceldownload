@@ -7,8 +7,6 @@ plugins {
     kotlin("plugin.spring") version "1.4.10"
 }
 
-apply { plugin("com.github.dcendents.android-maven")}
-
 group = "com.github.harrycjy1"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
@@ -17,11 +15,17 @@ repositories {
     mavenCentral()
 }
 
+//apply { plugin("com.github.dcendents.android-maven")}
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+    implementation("com.github.dcendents:android-maven-gradle-plugin:2.1")
+
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
