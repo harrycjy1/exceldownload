@@ -7,6 +7,7 @@ plugins {
     kotlin("plugin.spring") version "1.4.10"
 }
 
+group = "org.example"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
@@ -36,5 +37,5 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
-apply { plugin("com.github.dcendents.android-maven")}
-group = "com.github.harrycjy1"
+
+
